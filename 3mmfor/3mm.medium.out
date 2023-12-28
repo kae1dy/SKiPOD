@@ -1,0 +1,68 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1108499: <#BSUB -n 20;#BSUB -W 00:15;#BSUB -o 3mm.%J.out;#BSUB -e 3mm.%J.err; for n in 1 2 3 4 5 6 7 8 9 10 20 40 60 80 100 120 140 160;do ;    OMP_NUM_THREADS=$n ./3mm;done  > in cluster <MSUCluster> Done
+
+Job <#BSUB -n 20;#BSUB -W 00:15;#BSUB -o 3mm.%J.out;#BSUB -e 3mm.%J.err; for n in 1 2 3 4 5 6 7 8 9 10 20 40 60 80 100 120 140 160;do ;    OMP_NUM_THREADS=$n ./3mm;done  > was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skpod23-328-10> in cluster <MSUCluster> at Thu Dec  7 10:49:16 2023
+Job was executed on host(s) <20*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skpod23-328-10> in cluster <MSUCluster> at Thu Dec  7 10:49:17 2023
+</home_edu/edu-cmc-skpod23-328/edu-cmc-skpod23-328-10> was used as the home directory.
+</home_edu/edu-cmc-skpod23-328/edu-cmc-skpod23-328-10> was used as the working directory.
+Started at Thu Dec  7 10:49:17 2023
+Terminated at Thu Dec  7 10:49:19 2023
+Results reported at Thu Dec  7 10:49:19 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 20
+#BSUB -W 00:15
+#BSUB -o 3mm.%J.out
+#BSUB -e 3mm.%J.err
+
+for n in 1 2 3 4 5 6 7 8 9 10 20 40 60 80 100 120 140 160
+do 
+    OMP_NUM_THREADS=$n ./3mm
+done  
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   14.53 sec.
+    Max Memory :                                 1 MB
+    Average Memory :                             1.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              1
+    Max Threads :                                1
+    Run time :                                   1 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) follows:
+
+0.061913
+0.036984
+0.028649
+0.024032
+0.021450
+0.019500
+0.018613
+0.017344
+0.016188
+0.019375
+0.015170
+0.014745
+0.018231
+0.018291
+0.020948
+0.046931
+0.067790
+0.052283
+
+
+PS:
+
+Read file <3mm.1108499.err> for stderr output of this job.
+

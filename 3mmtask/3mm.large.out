@@ -1,0 +1,68 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1108089: <#BSUB -n 20;#BSUB -W 00:15;#BSUB -o 3mm.%J.out;#BSUB -e 3mm.%J.err; for n in 1 2 3 4 5 6 7 8 9 10 20 40 60 80 100 120 140 160;do ;    OMP_NUM_THREADS=$n ./3mm;done  > in cluster <MSUCluster> Done
+
+Job <#BSUB -n 20;#BSUB -W 00:15;#BSUB -o 3mm.%J.out;#BSUB -e 3mm.%J.err; for n in 1 2 3 4 5 6 7 8 9 10 20 40 60 80 100 120 140 160;do ;    OMP_NUM_THREADS=$n ./3mm;done  > was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skpod23-328-10> in cluster <MSUCluster> at Wed Dec  6 22:56:57 2023
+Job was executed on host(s) <20*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skpod23-328-10> in cluster <MSUCluster> at Wed Dec  6 23:09:11 2023
+</home_edu/edu-cmc-skpod23-328/edu-cmc-skpod23-328-10> was used as the home directory.
+</home_edu/edu-cmc-skpod23-328/edu-cmc-skpod23-328-10/3mmtask> was used as the working directory.
+Started at Wed Dec  6 23:09:11 2023
+Terminated at Wed Dec  6 23:09:33 2023
+Results reported at Wed Dec  6 23:09:33 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -n 20
+#BSUB -W 00:15
+#BSUB -o 3mm.%J.out
+#BSUB -e 3mm.%J.err
+
+for n in 1 2 3 4 5 6 7 8 9 10 20 40 60 80 100 120 140 160
+do 
+    OMP_NUM_THREADS=$n ./3mm
+done  
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   252.36 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             44.83 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                164
+    Run time :                                   22 sec.
+    Turnaround time :                            756 sec.
+
+The output (if any) follows:
+
+6.235872
+3.140051
+2.135557
+1.609490
+1.300091
+1.086911
+0.954719
+0.841809
+0.765929
+0.692741
+0.446810
+0.351028
+0.333384
+0.340500
+0.321775
+0.335153
+0.333128
+0.318832
+
+
+PS:
+
+Read file <3mm.1108089.err> for stderr output of this job.
+
